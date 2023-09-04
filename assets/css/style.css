@@ -217,6 +217,46 @@ button {
 .trend {
     margin-top: 40px;
 }
+
+.trend__slider {
+    margin-top: 60px;
+    width: 100%;
+    height: 346px;
+    overflow: hidden;
+}
+.trend__slider figure {
+    position: relative;
+    left: 0;
+    width: 200%;
+    height: 100%;
+}
+.trend__slide {
+    position: relative;
+    float: left;
+    width: 12.5%;
+    height: 100%;
+
+    animation: 15s slider infinite;
+}
+.trend__heading {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    width: 192px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    text-shadow: 2px 2px 2px #486286;
+}
+.trend__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0 15px;
+}
+
 @keyframes opacity {
     from {
         opacity: 0;
@@ -304,5 +344,40 @@ button {
     }
     100% {
         left: 0%;
+    }
+}
+@keyframes slider {
+    0% {
+        left: -12.5%;
+    }
+    5% {
+        left: -12.5%;
+    }
+    15% {
+        left: -25%;
+    }
+    35% {
+        left: -25%;
+    }
+    45% {
+        left: -37.5%;
+    }
+    55% {
+        left: -50%;
+    }
+    65% {
+        left: -50%;
+    }
+    75% {
+        left: -50%;
+    }
+    86% {
+        left: -37.5%;
+    }
+    90% {
+        left: -25%;
+    }
+    100% {
+        left: -12.5%;
     }
 }
